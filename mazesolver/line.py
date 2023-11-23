@@ -10,7 +10,7 @@ class Line:
         self._p1 = Point(x1, y1)
         self._p2 = Point(x2, y2)
     
-    def draw(self, canvas, fill_color):
+    def draw(self, canvas, fill_color="white"):
         canvas.create_line(
             self._p1._x, self._p1._y, self._p2._x, self._p2._y, fill=fill_color, width= 2
         )
