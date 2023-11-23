@@ -1,4 +1,5 @@
 from tkinter import Tk, BOTH, Canvas
+from line import *
 
 class Window:
     def __init__(self, width, height):
@@ -6,8 +7,8 @@ class Window:
         self._height = height
         self.__root_widget = Tk()
         self.__root_widget.title("MazeSolver")
-        self.__canvas = Canvas(width=self._width, height=self._height)
-        self.__canvas.pack(fill="both")
+        self._canvas = Canvas(width=self._width, height=self._height, background="lightblue")
+        self._canvas.pack(fill="both")
         self.__running = False
         self.__root_widget.protocol("WM_DELETE_WINDOW", self.close)
 
@@ -22,3 +23,7 @@ class Window:
 
     def close(self):
         self.__running = False
+
+    def draw_line(self, line, fill_color):
+        self._line = line
+        self._line.draw(self._canvas, fill_color)
