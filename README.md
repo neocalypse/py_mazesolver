@@ -13,11 +13,12 @@ git clone https://github.com/YOUR_USERNAME/py_mazesolver.git
 
 - Change into project directory and run the main file 
 ```bash
-cd mazesolver_py/mazesolver && python main.py
+cd py_mazesolver/mazesolver && python main.py
 ```
 - This should be the output
 
-https://github.com/neocalypse/py_mazesolver/assets/151811285/3aca1dc6-73b4-4e82-8d25-430472ee5acf
+https://github.com/neocalypse/py_mazesolver/assets/151811285/1b4ae089-8474-443c-b3e5-cbab2bbca0f3
+
 
 - If you are on windows, I recommend installing WSL(windows sub-system for linux), you can skip this if you already have git-bash installed.
 
